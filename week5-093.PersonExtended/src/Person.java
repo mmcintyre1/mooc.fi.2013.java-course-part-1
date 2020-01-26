@@ -39,10 +39,7 @@ public class Person {
     }
 
     public boolean olderThan(Person compared) {
-        if (this.age() == compared.age()) {
-            return this.birthday.getDaysIn365() > compared.birthday.getDaysIn365();
-        }
-        return this.age() > compared.age();
+        return this.birthday.earlier(compared.birthday);
     }
 
     public String getName() {
