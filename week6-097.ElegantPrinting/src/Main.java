@@ -8,6 +8,15 @@ public class Main {
     }
 
     public static void printElegantly(int[] array) {
-        // Write code here
+        String prettyPrint = "";
+        for (int i = 0; i < array.length; i++) {
+
+            if (i == array.length - 1) {
+                prettyPrint += array[i];
+            } else {
+                prettyPrint += array[i] + ", ";
+            }
+        }
+        System.out.println(prettyPrint);
     }
 }
