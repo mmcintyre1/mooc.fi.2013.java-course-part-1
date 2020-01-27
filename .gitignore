@@ -19,8 +19,8 @@ $RECYCLE.BIN/
 
 # Java build files
 *.class
-build/*
-private/*
+/build/*
+**/private/*
 
 # =========================
 # Operating System Files
