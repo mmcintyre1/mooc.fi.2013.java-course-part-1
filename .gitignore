@@ -17,10 +17,22 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# Java build files
+# NetBeans specific #
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Class Files #
 *.class
-/build/*
-**/private/*
+
+# Package Files #
+*.jar
+*.war
+*.ear
 
 # =========================
 # Operating System Files
