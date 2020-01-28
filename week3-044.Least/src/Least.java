@@ -5,7 +5,8 @@ public class Least {
         // write program code here
         // do not print anything inside the method
         // method needs a return in the end
-        return -1;
+        int min = Math.min(number1, number2);
+        return min;
     }
 
     public static void main(String[] args) {

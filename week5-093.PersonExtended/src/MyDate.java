@@ -5,18 +5,14 @@ public class MyDate {
     private int month;
     private int year;
 
-    public MyDate(int day, int month, int year) {
-        this.day = day;
-        this.month = month;
-        this.year = year;
+    public MyDate(int pv, int kk, int vv) {
+        this.day = pv;
+        this.month = kk;
+        this.year = vv;
     }
 
     public String toString() {
         return this.day + "." + this.month + "." + this.year;
-    }
-
-    public int getDaysIn365() {
-        return (this.month * 30) + this.day;
     }
 
     public boolean earlier(MyDate compared) {
@@ -36,20 +32,13 @@ public class MyDate {
         return false;
     }
 
-    public int differenceInYears(MyDate comparedDate) {
-        int yearDifference = Math.abs(this.year - comparedDate.year);
-        int dayDifference;
-
-        if (this.earlier(comparedDate)) {
-            dayDifference = this.getDaysIn365() - comparedDate.getDaysIn365();
-        } else {
-            dayDifference = comparedDate.getDaysIn365() - this.getDaysIn365();
-        }
-
-        if (yearDifference > 0 && dayDifference > 0) {
-            yearDifference--;
-        }
-        return yearDifference;
+    /*
+     * In assignment 92 method differneceInYears was added to MyDate 
+     * Copy the method here since it eases this assignment considerably.
+     */
+    public int differneceInYears(MyDate compared) {
+        return -99;
     }
 
+  
 }

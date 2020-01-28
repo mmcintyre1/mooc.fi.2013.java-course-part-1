@@ -1,28 +1,18 @@
-
 public class Clock {
-
-    private final BoundedCounter hours = new BoundedCounter(23);
-    private final BoundedCounter minutes = new BoundedCounter(59);
-    private final BoundedCounter seconds = new BoundedCounter(59);
-
+    private BoundedCounter hours;
+    private BoundedCounter minutes;
+    private BoundedCounter seconds;
+   
     public Clock(int hoursAtBeginning, int minutesAtBeginning, int secondsAtBeginning) {
-        this.hours.setValue(hoursAtBeginning);
-        this.minutes.setValue(minutesAtBeginning);
-        this.seconds.setValue(secondsAtBeginning);
-
+        // the counters that represent hours, minutes and seconds are created and set to have the correct initial values
     }
-
+    
     public void tick() {
-        this.seconds.next();
-        if (this.seconds.getValue() == 0) {
-            this.minutes.next();
-            if (this.minutes.getValue() == 0) {
-                this.hours.next();
-            }
-        }
+        // Clock advances by one second
     }
-
+    
     public String toString() {
-        return this.hours + ":" + this.minutes + ":" + this.seconds;
+        // returns the string representation
+        return "";
     }
 }

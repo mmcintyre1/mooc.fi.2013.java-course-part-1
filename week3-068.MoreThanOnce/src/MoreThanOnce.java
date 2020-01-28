@@ -4,7 +4,15 @@ import java.util.Scanner;
 public class MoreThanOnce {
 
     public static boolean moreThanOnce(ArrayList<Integer> list, int searched) {
-        // write your code here
+        int counter = 0;
+        for (int number: list) {
+            if (number == searched) {
+                counter++;
+            }
+            if (counter == 2) {
+                return true;
+            }
+        }
         return false;
     }
 
