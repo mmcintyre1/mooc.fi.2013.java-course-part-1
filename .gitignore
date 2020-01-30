@@ -25,6 +25,7 @@ dist/*
 nbdist/*
 nbactions.xml
 nb-configuration.xml
+week1-000*
 
 # Class Files #
 *.class
