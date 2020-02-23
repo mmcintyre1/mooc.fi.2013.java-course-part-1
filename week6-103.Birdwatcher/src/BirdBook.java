@@ -6,7 +6,7 @@ public class BirdBook {
     private ArrayList<Bird> birds;
 
     public BirdBook() {
-        this.birds = new ArrayList<>();
+        this.birds = new ArrayList<Bird>();
     }
 
     private Bird findBird(String name) {

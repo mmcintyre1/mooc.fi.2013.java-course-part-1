@@ -26,6 +26,8 @@ nbdist/*
 nbactions.xml
 nb-configuration.xml
 week1-000*
+**/nbproject/private/*
+*build_log.txt
 
 # Class Files #
 *.class
